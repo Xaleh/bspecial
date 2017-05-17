@@ -1,0 +1,37 @@
+html,
+body {
+    width: 100%;
+}
+
+h2 {
+    font-family: Cursiva, sans-serif;
+    text-align: center;
+    font-size: 5em;
+}
+
+.thumbnail {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    text-align: center;
+}
+
+.txt-verde {
+	color: #A8CF45;
+}
+
+.txt-branco {
+	color: #FFFDFC;
+}
+
+.txt-azul {
+    color: #008BD2;
+}
+
+#como-funciona {
+    background-color: #0098DA;
+}
+
+#vamos-conversar {
+	background-color: #0098DA;
+    padding-bottom: 20px;
+}

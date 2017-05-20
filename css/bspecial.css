@@ -35,3 +35,17 @@ h2 {
 	background-color: #0098DA;
     padding-bottom: 20px;
 }
+
+.programas {
+    max-height: 10em;
+    padding: 10px;
+}
+
+#phone {
+    background-color: #A8CF45;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}

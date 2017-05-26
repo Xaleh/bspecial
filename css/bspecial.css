@@ -1,12 +1,19 @@
 html,
 body {
-    width: 100%;
+    max-width: 100%;
+    height: 100%;
 }
 
 h2 {
     font-family: Cursiva, sans-serif;
     text-align: center;
     font-size: 5em;
+}
+
+p {
+    font-family: Roboto, sans-serif;
+    font-size: 1.7em;
+    padding: .18em;
 }
 
 .thumbnail {
@@ -33,12 +40,28 @@ h2 {
 
 #vamos-conversar {
 	background-color: #0098DA;
-    padding-bottom: 20px;
+    padding-bottom: 3%;
+}
+
+.alinhamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#boneco-contato {
+    padding-bottom: 2%;
+    width: 10%;
+}
+
+#quem-somos > p {
+	text-align: justify;
+    padding: .7em;
 }
 
 .programas {
     max-height: 10em;
-    padding: 10px;
+    padding: 3%;
 }
 
 #phone {
@@ -48,4 +71,135 @@ h2 {
 footer {
     background-color: black;
     color: white;
+    text-align: center;
+}
+
+
+
+
+header {
+	background-image: url(../img/foto.png);
+	background-size: cover;
+	background-position: top center;
+	height: 100%;
+}
+
+.bspecial-banner {
+	color: #FFF;
+	background-color: rgba(72,124,28, .38);
+	padding: 20px;
+	width: 80%;
+	border-radius: 12px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	transition: .3s;
+    
+}
+h3 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+}
+
+.logo-brand {
+	padding-top: 2px;
+    width: 143px;
+}
+.botao {
+	background-color: rgba(62,145,64,.86);
+    border-color: green;
+}
+
+
+
+/*Responsivo para dispositivos menores*/
+@media (max-width:586px){
+    .bspecial-banner {
+	   top: 50%;
+    }
+}
+@media (max-width:394px){
+    .bspecial-banner {
+	   top: 40%;
+    }
+}
+
+
+/*Responsivo para dispositivos maiores*/
+@media(min-width: 768px) {
+    #como-funciona,
+    #nossas-vantagens,
+    #vamos-conversar,
+    #quem-somos,
+    #phone {
+	   margin: 0;
+        width: auto;
+    }
+    
+    #vamos-conversar {
+        display: flex;
+    }
+    .alinhamento {
+        width: 60%;
+    }
+    form {
+        width: 40%;
+        padding-top: 2em;
+    }
+    label {
+        font-size: 1.65em;
+    }
+    
+    
+    #quem-somos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #quem-somos > p {
+        text-align: center;
+    }
+    
+    #grupo-programas {
+        display: flex;
+        align-content: center;
+    }
+    .programas {
+        max-width: 250px;  
+    }
+    #lemonade {
+        margin-right: 0;
+    }
+    #startup {
+        margin-left: 0;
+    }
+    
+    footer {
+        width: 100%;
+        padding: 5px;
+    }
+    body{
+        max-width: 2000px;
+    }
+    .barra-top a {
+        font-weight: bold;
+        font-family: Cursiva, sans-serif;
+        font-size: 2.2em;
+    }
+    .navbar-default
+    .navbar-nav > li > a {
+        color: #A9D049; 
+    }
+}
+
+@media (min-width:768px) and (max-width:990px) {
+    .navbar-brand > img {
+        margin-left: 240%;
+    }
+    .barra-top a {
+        font-size: 2.5em;
+    }
 }
